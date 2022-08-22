@@ -14,9 +14,10 @@ function getPlayerName(name) {
     }
 }
 
-function buttonDisabled(buttonName) {
-    document.getElementById(buttonName).disabled = true;
-}
+/* function buttonDisable(event) {
+    event.target.disabled = true;
+    event.target.classList.add('bg-secondary');
+} */
 
 /* let buttonColor = document.querySelector('btn');
 function disabledColor() {
@@ -27,9 +28,9 @@ function disabledColor() {
 
 
 
-document.getElementById('first-btn').addEventListener('click', function onClick(event) {
+/* document.getElementById('first-btn').addEventListener('click', function onClick(event) {
     event.target.style.backgroundColor = 'red';
 
 })
 
-onClick();
+onClick(); */
