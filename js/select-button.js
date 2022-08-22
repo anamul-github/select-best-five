@@ -1,18 +1,25 @@
-
+/* 
 
 document.getElementById('first-btn').addEventListener('click', function (event) {
-    event.target.disabled = true;
-    event.target.classList.add('bg-secondary');
     getPlayerName('first-player');
+
+    const orderedList = document.getElementById('ordered-list')
+    if (event.target.disabled > 5) {
+        alert('You cannot add more than 5 players!')
+    }
+    else {
+        event.target.disabled = true;
+        event.target.classList.add('bg-secondary');
+    }
+
+
+
 
 });
 
+document.getElementById('first-btn').addEventListener('click', function (event) {
 
-
-
-
-
-
+})
 
 document.getElementById('second-btn').addEventListener('click', function (event) {
     event.target.disabled = true;
@@ -54,4 +61,4 @@ document.getElementById('nineth-btn').addEventListener('click', function (event)
     event.target.disabled = true;
     event.target.classList.add('bg-secondary');
     getPlayerName('nineth-player');
-});
+}); */
