@@ -6,14 +6,12 @@ for (const selectButton of selectButtons) {
         const targetPlayerName = targetButton.parentNode.querySelector('h5').innerText;
 
         if (selectedListLength >= 5) {
-            alert('limit reached!');
+            alert('You cannot add more than 5 players!');
         }
         else {
             getPlayerName(targetPlayerName);
             targetButton.disabled = true;
             targetButton.classList.add('bg-secondary');
-            // counter += 1;
-            // setElementById("select-counter", selectedListLength);
             selectedListLength = document.getElementById('selected-players').children.length;
         }
 
