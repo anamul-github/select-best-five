@@ -1,17 +1,16 @@
-
-
 function getPlayerName(name) {
     const getPlayerNameById = document.getElementById(name);
     const getPlayerName = getPlayerNameById.innerText;
     const orderedList = document.getElementById('ordered-list');
-    let test = [orderedList.childNodes];
+    let players = [orderedList.childNodes];
+    console.log(players);
 
 
-    if (test.length < 5) {
+    if (players.length < 5) {
         const createLi = document.createElement('li');
         createLi.innerText = getPlayerName;
         orderedList.appendChild(createLi);
-        // test.push(createLi.innerText);
+        // players.push(createLi.innerText);
     }
 
     else {
@@ -20,7 +19,5 @@ function getPlayerName(name) {
 }
 
 
-document.getElementById('first-btn').addEventListener('click', function () {
-    getPlayerName('first-player');
-});
+
 
