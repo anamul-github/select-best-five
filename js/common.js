@@ -18,14 +18,18 @@ function buttonDisabled(buttonName) {
     document.getElementById(buttonName).disabled = true;
 }
 
-let buttonColor = document.querySelector('btn');
+/* let buttonColor = document.querySelector('btn');
 function disabledColor() {
     if (buttonColor.disabled == true) {
-        buttonColor.style.backgroundColor = 'red';
-    }
-    // document.getElementById('first-btn').style.color = 'red';
-}
+        buttonColor.style.backgroundColor = 'red'; */
+
+// document.getElementById('first-btn').style.color = 'red';
 
 
 
+document.getElementById('first-btn').addEventListener('click', function onClick(event) {
+    event.target.style.backgroundColor = 'red';
 
+})
+
+onClick();
