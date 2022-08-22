@@ -1,5 +1,7 @@
 document.getElementById('first-btn').addEventListener('click', function () {
     getPlayerName('first-player');
+    buttonDisabled('first-btn');
+    disabledColor('first-btn');
 });
 document.getElementById('second-btn').addEventListener('click', function () {
     getPlayerName('second-player');
