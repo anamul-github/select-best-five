@@ -1,11 +1,23 @@
 .heading-container {
     background-color: #0D0D0D;
     min-height: 400px;
-    /* padding: 100px 0; */
+
+
+}
+
+.banner-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+/* .banner-text {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
+
 
 .card-background {
     background-color: #0D0D0D;
@@ -13,4 +25,8 @@
 
 .ordered-list {
     list-style: none;
+}
+
+.budget {
+    background-color: #0D0D0D;
 }

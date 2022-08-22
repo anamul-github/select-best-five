@@ -15,12 +15,21 @@
 
 <body>
     <!-- heading section  -->
-    <header class="heading-container text-white text-center">
-        <div>
-            <h1 class="fs-1">MY TOP FIVE</h1>
-            <p class="mt-3">I am adding all my favorite cricket players here. <br> You can select best five from here.
-                Choose whoever you
-                like. <br> Price is same for everyone. </p>
+    <header class="heading-container text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid w-100 banner-img" src="/images/3.png" alt="">
+                </div>
+                <div class="col-6 text-center">
+                    <h1 class="fs-1">MY TOP FIVE</h1>
+                    <p class="mt-3">I am adding all my favorite cricket players here. <br> You can select best five from
+                        here.
+                        Choose whoever you
+                        like. <br> Price is same for everyone.
+                    </p>
+                </div>
+            </div>
         </div>
     </header>
     <!-- main section  -->
@@ -28,7 +37,7 @@
         <div class="container">
             <div class="row">
                 <!-- left side column -->
-                <div class="col-9">col-9
+                <div class="col-9 my-5">
                     <div class="row row-cols-1 row-cols-md-3 g-4 text-white">
                         <!-- card-1 -->
                         <div class="col">
@@ -126,10 +135,10 @@
                 <!-- left side column end -->
 
                 <!-- right side column -->
-                <div class="col-3">col-3
+                <div class="col-3 my-5">
                     <!-- Selected Five players -->
                     <div>
-                        <h3 class="text-center">Selected-V</h3>
+                        <h3 class="text-center my-3">Selected-V</h3>
                         <ol class="ordered-list">
                             <li></li>
                             <li></li>
@@ -139,19 +148,15 @@
                         </ol>
                     </div>
                     <!-- budget calculation start  -->
-                    <div>
-                        <h3 class="text-center">Budget</h3>
-                        <span class="">Per Player</span>
-                        <input type="text" placeholder="">
-                        <button id="calculate-btn" class="btn btn-primary w-100">Calculate</button>
-                        <br>
-                        <h5>Player Expenses: <span></span></h5>
-                        <span class="">Manager</span>
-                        <input type="text" placeholder="">
-                        <br>
-                        <span class="">Coach</span>
-                        <input type="text" placeholder="">
-                        <button class="btn btn-primary w-100">Calculate Total</button>
+                    <div class="budget p-2 mx-2">
+                        <h3 class="text-center my-3">Budget</h3>
+                        <h5 class="fs-6">Per Player <input type="text" placeholder=""></h5>
+                        <button id="calculate-btn" class="btn btn-primary w-100 my-4">Calculate</button>
+                        <h5 class="fs-6 py-2">Player Expenses: <span></span></h5>
+                        <h5 class="fs-6 py-2">Manager <input type="text" placeholder=""></h5>
+                        <h5 class="fs-6">Coach <input type="text" placeholder=""></h5>
+
+                        <button class="btn btn-primary w-100 my-3">Calculate Total</button>
 
                         <h5>Total: <span></span></h5>
                     </div>
