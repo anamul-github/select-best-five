@@ -1,8 +1,6 @@
 .heading-container {
     background-color: #0D0D0D;
     min-height: 400px;
-
-
 }
 
 /* .banner-img {
@@ -29,6 +27,18 @@
 
 .budget {
     background-color: #0D0D0D;
+}
+
+.per-player-input {
+    margin-left: 5%;
+}
+
+.manager-input {
+    margin-left: 8%;
+}
+
+.coach-input {
+    margin-left: 16%;
 }
 
 .footer {
